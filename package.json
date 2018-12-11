@@ -1,0 +1,48 @@
+{
+  "name": "@mgsisk/postcss-config",
+  "version": "0.0.0",
+  "description": "Opinionated preset configuration for PostCSS.",
+  "main": "src/index.js",
+  "scripts": {
+    "clean": "find . -name '*.DS_Store' -type f -delete",
+    "lint.js": "eslint '**/*.js' '**/.*.js'",
+    "lint.json": "jsonlint-cli '**/*.json' '**/.*.json'",
+    "lint.md": "remark .",
+    "lint.yml": "yamllint '**/*.yml' '**/.*.yml'",
+    "preversion": "npm test",
+    "postversion": "git push --follow-tags",
+    "test": "npm run lint.js; tap tests --coverage-report=lcovonly"
+  },
+  "repository": "github:mgsisk/postcss-config",
+  "keywords": [
+    "css",
+    "postcss",
+    "postcss-config",
+    "postcss-plugin"
+  ],
+  "author": "mgsisk <me@mgsisk.com> (https://mgsisk.com)",
+  "license": "ISC",
+  "bugs": "https://github.com/mgsisk/postcss-config/issues",
+  "homepage": "https://github.com/mgsisk/postcss-config#readme",
+  "dependencies": {
+    "@mgsisk/postcss-modular-rhythm": "^0.2.0",
+    "cssnano": "^4.1.7",
+    "postcss": "^7.0.6",
+    "postcss-color-mod-function": "^3.0.3",
+    "postcss-easings": "^2.0.0",
+    "postcss-font-weights": "^5.0.0",
+    "postcss-import": "^12.0.1",
+    "postcss-normalize": "^7.0.1",
+    "postcss-preset-env": "^6.4.0",
+    "postcss-short": "^5.0.0"
+  },
+  "devDependencies": {
+    "@mgsisk/eslint-config": "^0.6.2",
+    "@mgsisk/remark-lint-config": "^0.1.2",
+    "eslint": "^5.10.0",
+    "jsonlint-cli": "^1.0.1",
+    "remark-cli": "^6.0.1",
+    "tap": "^12.1.0",
+    "yaml-lint": "^1.2.4"
+  }
+}
