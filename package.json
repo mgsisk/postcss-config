@@ -28,11 +28,8 @@
     "@mgsisk/postcss-modular-rhythm": "^0.2.0",
     "cssnano": "^4.1.7",
     "postcss": "^7.0.6",
-    "postcss-color-mod-function": "^3.0.3",
     "postcss-easings": "^2.0.0",
-    "postcss-font-weights": "^5.0.0",
     "postcss-import": "^12.0.1",
-    "postcss-normalize": "^7.0.1",
     "postcss-preset-env": "^6.4.0",
     "postcss-short": "^5.0.0"
   },

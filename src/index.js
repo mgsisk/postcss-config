@@ -3,7 +3,6 @@ const postcss = require('postcss')
 module.exports = postcss.plugin('@mgsisk/postcss-config', ()=> (_root, result)=> {
   result.processor
     .use(require('postcss-import'))
-    .use(require('postcss-normalize'))
     .use(require('@mgsisk/postcss-modular-rhythm'))
     .use(require('postcss-easings'))
     .use(require('postcss-short'))
@@ -11,6 +10,5 @@ module.exports = postcss.plugin('@mgsisk/postcss-config', ()=> (_root, result)=>
       stage: 0,
       features: {'custom-properties': {preserve: false}},
     }))
-    .use(require('postcss-color-mod-function'))
     .use(require('cssnano')({preset: 'default'}))
 })
