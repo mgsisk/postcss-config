@@ -6,12 +6,12 @@
   "scripts": {
     "clean": "find . -name '*.DS_Store' -type f -delete",
     "lint.js": "eslint '**/*.js' '**/.*.js'",
-    "lint.json": "jsonlint-cli '**/*.json' '**/.*.json'",
+    "lint.json": "find . \\( -name '*.json' -o -name '.*.json' \\) ! -path '*/node_modules/*' ! -path '*/vendor/*' ! -path '*/.nyc_output/*' | xargs -L1 jsonlint -q",
     "lint.md": "remark .",
     "lint.yml": "yamllint '**/*.yml' '**/.*.yml'",
     "preversion": "npm test",
     "postversion": "git push --follow-tags",
-    "test": "npm run lint.js; tap tests --coverage-report=lcovonly"
+    "test": "tap tests --coverage-report=lcovonly"
   },
   "repository": "github:mgsisk/postcss-config",
   "keywords": [
@@ -25,21 +25,20 @@
   "bugs": "https://github.com/mgsisk/postcss-config/issues",
   "homepage": "https://github.com/mgsisk/postcss-config#readme",
   "dependencies": {
-    "@mgsisk/postcss-modular-rhythm": "^0.2.0",
-    "cssnano": "^4.1.7",
-    "postcss": "^7.0.6",
+    "@mgsisk/postcss-modular-rhythm": "^0.2.1",
+    "cssnano": "^4.1.10",
+    "postcss": "^7.0.17",
     "postcss-easings": "^2.0.0",
     "postcss-import": "^12.0.1",
-    "postcss-preset-env": "^6.4.0",
+    "postcss-preset-env": "^6.6.0",
     "postcss-short": "^5.0.0"
   },
   "devDependencies": {
-    "@mgsisk/eslint-config": "^0.6.2",
-    "@mgsisk/remark-lint-config": "^0.1.2",
-    "eslint": "^5.10.0",
-    "jsonlint-cli": "^1.0.1",
+    "@mgsisk/eslint-config": "^0.7.0",
+    "@mgsisk/remark-lint-config": "^0.2.0",
+    "eslint": "^6.0.1",
     "remark-cli": "^6.0.1",
-    "tap": "^12.1.0",
+    "tap": "^14.4.0",
     "yaml-lint": "^1.2.4"
   }
 }
