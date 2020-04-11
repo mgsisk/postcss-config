@@ -8,18 +8,13 @@ env:
   global:
     - CC_TEST_REPORTER_ID=b6248a8134aef01089a003fec1b45b284ab925a048b1ddf20794361fe9361368
 
-install:
-  - npm install
-  - mkdir tmp
-  - export PATH=$PATH:$(pwd)/tmp
-
 before_script:
-  - wget -O tmp/cc-test-reporter https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64
-  - chmod +x tmp/cc-test-reporter
-  - cc-test-reporter before-build
+  - wget -O ./cctr https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64
+  - chmod +x ./cctr
+  - ./cctr before-build
 
 after_script:
-  - cc-test-reporter after-build -t lcov --exit-code $TRAVIS_TEST_RESULT
+  - ./cctr after-build -t lcov --exit-code $TRAVIS_TEST_RESULT
 
 deploy:
   provider: npm
