@@ -6,9 +6,8 @@
   "scripts": {
     "clean": "find . -name '*.DS_Store' -type f -delete",
     "lint.js": "eslint '**/*.js' '**/.*.js'",
-    "lint.json": "find . \\( -name '*.json' -o -name '.*.json' \\) ! -path '*/node_modules/*' ! -path '*/vendor/*' ! -path '*/.nyc_output/*' | xargs -L1 jsonlint -q",
-    "lint.md": "remark .",
     "lint.json": "printf 'package-lock.json package.json' | xargs -n1 jsonlint -q",
+    "lint.md": "remark . .github/ --ignore-pattern 'LICENSE*'",
     "lint.yml": "yamllint '**/*.yml' '**/.*.yml'",
     "preversion": "npm test",
     "postversion": "git push --follow-tags",
