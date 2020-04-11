@@ -1,4 +1,4 @@
-.DS_Store
 .nyc_output/
+.vagrant/
 coverage/
 node_modules/
