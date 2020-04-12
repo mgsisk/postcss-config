@@ -1,5 +1,7 @@
 # Changelog
 
+Documents notable project changes. Versions are [semantic][].
+
 ## [Unreleased][]
 
 - No unreleased changes
@@ -55,3 +57,4 @@
 [0.2.0]: https://github.com/mgsisk/postcss-config/compare/v0.1.1...v0.2.0
 [0.1.1]: https://github.com/mgsisk/postcss-config/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/mgsisk/postcss-config/tree/v0.1.0
+[semantic]: https://semver.org
