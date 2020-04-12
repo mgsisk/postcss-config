@@ -1,3 +1,5 @@
+'use strict'
+
 const postcss = require('postcss')
 
 module.exports = postcss.plugin('@mgsisk/postcss-config', ()=> (_root, result)=> {

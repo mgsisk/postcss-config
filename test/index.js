@@ -1,3 +1,5 @@
+'use strict'
+
 const plugin = require('../src')
 const postcss = require('postcss')
 const tap = require('tap')

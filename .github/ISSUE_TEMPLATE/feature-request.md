@@ -17,7 +17,6 @@ Provide a clear and concise description of any alternative solutions or features
 considered here.
 
 **Suggested Implementation**  
-
 Provide a clear and concise description of any suggested implementations here,
 or delete this section.
 
