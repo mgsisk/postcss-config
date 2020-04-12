@@ -26,6 +26,11 @@
   "bugs": "https://github.com/mgsisk/postcss-config/issues",
   "homepage": "https://github.com/mgsisk/postcss-config#readme",
   "files": ["src"],
+  "directories": {
+    "doc": "docs",
+    "lib": "src",
+    "test": "test"
+  },
   "dependencies": {
     "@mgsisk/postcss-modular-rhythm": "^0.2.1",
     "cssnano": "^4.1.10",
