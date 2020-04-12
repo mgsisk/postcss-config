@@ -32,20 +32,22 @@
     "test": "test"
   },
   "dependencies": {
-    "@mgsisk/postcss-modular-rhythm": "^0.2.1",
+    "@mgsisk/postcss-modular-rhythm": "^0.3.0",
     "cssnano": "^4.1.10",
-    "postcss": "^7.0.17",
+    "postcss": "^7.0.27",
     "postcss-easings": "^2.0.0",
     "postcss-import": "^12.0.1",
-    "postcss-preset-env": "^6.6.0",
+    "postcss-preset-env": "^6.7.0",
     "postcss-short": "^5.0.0"
   },
   "devDependencies": {
-    "@mgsisk/eslint-config": "^0.7.0",
+    "@mgsisk/eslint-config": "^1.0.0",
     "@mgsisk/remark-lint-config": "^0.2.0",
-    "eslint": "^6.0.1",
-    "remark-cli": "^6.0.1",
-    "tap": "^14.4.0",
+    "eslint": "^6.8.0",
+    "jsonlint": "^1.6.3",
+    "remark-cli": "^8.0.0",
+    "shellcheck": "^0.4.2",
+    "tap": "^14.10.7",
     "yaml-lint": "^1.2.4"
   }
 }
