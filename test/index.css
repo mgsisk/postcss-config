@@ -1,0 +1,10 @@
+:root{
+  --color: red;
+}
+
+a {
+  color: var(--color);
+  font-size: 0mfs;
+  margin: * * 1em;
+  transition-easing: ease-in-sine;
+}
