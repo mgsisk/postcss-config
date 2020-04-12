@@ -4,14 +4,15 @@
   "description": "Opinionated preset configuration for PostCSS.",
   "main": "src/index.js",
   "scripts": {
-    "clean": "find . -name '*.DS_Store' -type f -delete",
     "lint.js": "eslint '**/*.js' '**/.*.js'",
     "lint.json": "printf 'package-lock.json package.json' | xargs -n1 jsonlint -q",
     "lint.md": "remark . .github/ --ignore-pattern 'LICENSE*'",
+    "lint.sh": "shellcheck *.sh",
     "lint.yml": "yamllint '**/*.yml' '**/.*.yml'",
+    "test": "tap test",
     "preversion": "npm test",
-    "postversion": "git push --follow-tags",
-    "test": "tap tests --coverage-report=lcovonly"
+    "version": "git add --all",
+    "postversion": "git push --follow-tags"
   },
   "repository": "github:mgsisk/postcss-config",
   "keywords": [
