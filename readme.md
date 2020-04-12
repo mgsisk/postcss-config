@@ -1,18 +1,17 @@
 # @mgsisk/postcss-config
 
-[![Version 0.0.0][img-version]][url-version]
-[![Build status][img-build]][url-build]
-[![Maintainability grade][img-maintainability]][url-maintainability]
-[![Test coverage][img-coverage]][url-coverage]
-[![Support development][img-support]][url-support]
+Opinionated configuration for PostCSS.
 
-> Opinionated preset configuration for PostCSS.
+[![Latest release][badge-release]][url-release]
+[![Build status][badge-build]][url-build]
+[![Code maintainability][badge-maintainability]][url-maintainability]
+[![Test coverage][badge-coverage]][url-coverage]
+[![Maintainer funding][badge-funding]][url-funding]
 
-The @mgsisk/postcss-config package is an opinionated [PostCSS][] plugin that
-loads other plugins preconfigured for CSS development.
+@mgsisk/postcss-config is an opinionated [PostCSS][] plugin that loads other
+plugins preconfigured for CSS development. Includes the following plugins:
 
 - [postcss-import][]
-- [postcss-normalize][]
 - [@mgsisk/postcss-modular-rhythm][]
 - [postcss-easings][]
 - [postcss-short][]
@@ -25,23 +24,10 @@ loads other plugins preconfigured for CSS development.
     }
   }
   ```
-- [postcss-color-mod-function][]
 - [cssnano][]
   ```js
-  {
-    preset: 'default'
-  }
+  {preset: 'default'}
   ```
-
-[PostCSS]: https://postcss.org/
-[postcss-import]: https://github.com/postcss/postcss-import
-[postcss-normalize]: https://github.com/csstools/postcss-normalize
-[@mgsisk/postcss-modular-rhythm]: https://github.com/mgsisk/postcss-modular-rhythm
-[postcss-easings]: https://github.com/postcss/postcss-easings
-[postcss-short]: https://github.com/jonathantneal/postcss-short
-[postcss-preset-env]: https://github.com/csstools/postcss-preset-env
-[postcss-color-mod-function]: https://github.com/jonathantneal/postcss-color-mod-function
-[cssnano]: https://github.com/cssnano/cssnano
 
 ## Installation
 
@@ -63,26 +49,47 @@ module.exports = {
 }
 ````
 
-## Support
+[Support resources][] are available if you need help with this project. Refer to
+individual plugin documentation for more information on how each works.
 
-[Support][] resources are available.
+## Contributing
 
-[support]: https://github.com/mgsisk/postcss-config/blob/master/support.md
+[Contributions][] are always welcome; please read the [code of conduct][]
+before you begin. See the [changelog][] for notable project changes, and report
+any [security][] concerns you find.
 
-## Contribute
+## Thanks
 
-[Contributions][] are always welcome.
+To the [contributors][] that help to build, fund, and maintain this project;
+the [other works][] that have contributed to and inspired this project; and
+anyone that has found this project useful.
 
-[Contributions]: https://github.com/mgsisk/postcss-config/blob/master/contributing.md
+## License
 
-[img-version]: https://img.shields.io/npm/v/@mgsisk/postcss-config.svg?logo=npm
-[img-build]: https://img.shields.io/travis/mgsisk/postcss-config.svg?logo=travis
-[img-maintainability]: https://api.codeclimate.com/v1/badges/1dfcbf9ccae6b7313eab/maintainability
-[img-coverage]: https://api.codeclimate.com/v1/badges/1dfcbf9ccae6b7313eab/test_coverage
-[img-support]: https://img.shields.io/badge/donate-coffee-darkorange.svg?logo=gratipay&logoColor=fff
+[ISC][]
 
-[url-version]: https://npmjs.com/package/@mgsisk/postcss-config
-[url-build]: https://travis-ci.org/mgsisk/postcss-config
-[url-maintainability]: https://codeclimate.com/github/mgsisk/postcss-config/maintainability
-[url-coverage]: https://codeclimate.com/github/mgsisk/postcss-config/test_coverage
-[url-support]: https://buymeacoffee.com/mgsisk
+[@mgsisk/postcss-modular-rhythm]: https://github.com/mgsisk/postcss-modular-rhythm
+[badge-build]: https://img.shields.io/travis/com/mgsisk/postcss-config
+[badge-coverage]: https://img.shields.io/codeclimate/coverage/mgsisk/postcss-config
+[badge-funding]: https://img.shields.io/liberapay/receives/mgsisk
+[badge-maintainability]: https://img.shields.io/codeclimate/maintainability/mgsisk/postcss-config
+[badge-release]: https://img.shields.io/github/v/tag/mgsisk/postcss-config?sort=semver
+[changelog]: https://github.com/mgsisk/postcss-config/blob/master/docs/CHANGELOG.md
+[code of conduct]: https://github.com/mgsisk/postcss-config/blob/master/docs/CODE_OF_CONDUCT.md
+[Contributions]: https://github.com/mgsisk/postcss-config/blob/master/docs/CONTRIBUTING.md
+[contributors]: https://github.com/mgsisk/postcss-config/blob/master/docs/AUTHORS.md
+[cssnano]: https://github.com/cssnano/cssnano
+[isc]: https://github.com/mgsisk/postcss-config/blob/master/LICENSE.md
+[other works]: https://github.com/mgsisk/postcss-config/blob/master/docs/THANKS.md
+[postcss-easings]: https://github.com/postcss/postcss-easings
+[postcss-import]: https://github.com/postcss/postcss-import
+[postcss-preset-env]: https://github.com/csstools/postcss-preset-env
+[postcss-short]: https://github.com/jonathantneal/postcss-short
+[postcss]: https://postcss.org
+[security]: https://github.com/mgsisk/postcss-config/blob/master/docs/SECURITY.md
+[support resources]: https://github.com/mgsisk/postcss-config/blob/master/docs/SUPPORT.md
+[url-build]: https://travis-ci.com/mgsisk/postcss-config
+[url-coverage]: https://codeclimate.com/github/mgsisk/postcss-config
+[url-funding]: https://github.com/mgsisk/postcss-config/blob/master/docs/CONTRIBUTING.md#funding
+[url-maintainability]: https://codeclimate.com/github/mgsisk/postcss-config
+[url-release]: https://github.com/mgsisk/postcss-config/releases
