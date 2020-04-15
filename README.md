@@ -47,7 +47,7 @@ module.exports = {
     …
   ]
 }
-````
+```
 
 [Support resources][] are available if you need help with this project. Refer to
 individual plugin documentation for more information on how each works.
