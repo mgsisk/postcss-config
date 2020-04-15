@@ -6,7 +6,7 @@ Documents notable project changes. Versions are [semantic][].
 
 - No unreleased changes
 
-## [0.3.0] - 2020-04-11
+## [0.3.0][] - 2020-04-11
 
 ### Changed
 
